@@ -27,7 +27,7 @@ nmap -sC -sV -T4 -v < IP >
  
   * I usually perform one more scan by using my personal tool : [port-scanner](https://github.com/shybu9/port-Scanner)
 ![deathnote portscanner](https://user-images.githubusercontent.com/112984045/201923393-7c7f0019-07c4-40cb-8f00-3ad50954bacd.png)
- ~ I prefer this tool because of its speed as you can see it just took 858 seconds for scanning 65535 ports.Even still some improvements to be done
+ ~ I prefer this tool because of its speed as you can see it just took 40 seconds for scanning 65535 ports.Even still some improvements to be done
  
  ### ANALYSING BOTH SCANS :
  * number of OPEN PORTS : 2
@@ -40,6 +40,9 @@ nmap -sC -sV -T4 -v < IP >
  ```bash
  http://<IP>
  ```
+ ![deathnote iponweb](https://user-images.githubusercontent.com/112984045/201925983-a0bcb8d9-91a8-4bf9-bcf1-67a0c31efb03.png)
+
  
  <br>
-* 
+ 
+ * 
