@@ -98,8 +98,14 @@ http://< IP >/wordpress/wp-admin
 <br>
 
 
-![deathnote adminmedia](https://user-images.githubusercontent.com/112984045/202252864-f213d504-e0fb-4fba-b4af-c502a9ce51fb.png)
+![deathnote adminmedia](https://user-images.githubusercontent.com/112984045/202252864-f213d504-e0fb-4fba-b4af-c502a9ce51fb.png)<br>
 
+ ![deathnote webnote](https://user-images.githubusercontent.com/112984045/202262434-46e427b8-b93f-4802-98a8-334af3e859f1.png)
+ <br>
  
- 
+ ```bash
+ wget < copied link >
+ ```
+ ![deathnote notes](https://user-images.githubusercontent.com/112984045/202262450-5038af71-b0ca-412a-a255-f30b6de2871f.png)
+
  
