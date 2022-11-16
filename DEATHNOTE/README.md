@@ -118,6 +118,15 @@ hydra -l l -P note.txt ssh://< IP >
 ssh l@< IP >
 ```
 ![deathnote ssh l](https://user-images.githubusercontent.com/112984045/202267838-6f78065c-e3b8-486c-a7dc-8975eff5c27e.png)
+<br>
+
+```bash
+cat user.txt
+```
+![deathnote cat user](https://user-images.githubusercontent.com/112984045/202270033-a97517c9-fd6e-46e6-9ff8-3222ed3dc5a4.png)<br>
+
+* Use the [link](https://www.tutorialspoint.com/execute_brainfk_online.php) to decode brainfuck 
+![deathnote brainfuck](https://user-images.githubusercontent.com/112984045/202270063-23ed6650-9776-4fd7-985d-c946107280fe.png)
 
 
  
