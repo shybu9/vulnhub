@@ -77,10 +77,28 @@ http://< IP >/important.jpg
 ```bash
 wget http://< IP >/important.jpg
 ```
-![deathnote important crack](https://user-images.githubusercontent.com/112984045/202199212-ec1e495f-0b6a-46b8-84d2-0cd4a5ddc942.png)
+![deathnote important crack](https://user-images.githubusercontent.com/112984045/202199212-ec1e495f-0b6a-46b8-84d2-0cd4a5ddc942.png)<br>
+```bash
+http://deathnote.vuln/wordpress/index.php/hint/
+```
+![deathnote hint](https://user-images.githubusercontent.com/112984045/202249653-4f9c4014-c6f3-4337-b4e1-6c547044314f.png)
+![deathnote Lcomment](https://user-images.githubusercontent.com/112984045/202250763-74359e02-f4e5-482c-a7d3-f609176742d5.png)<br>
+
+` I think i have found something else`
+* PASSWORD :  iamjustic3
+```bash
+http://< IP >/wordpress/wp-admin
+```
+![deathnote adminpage](https://user-images.githubusercontent.com/112984045/202252487-37685b3e-fd85-4ef2-b1dd-e6df4387408e.png)
 
 
+`It was a simple guess...`<br>
+* USERNAME : Kire<br>
+* PASSWORD : iamjustic3
+<br>
 
+
+![deathnote adminmedia](https://user-images.githubusercontent.com/112984045/202252864-f213d504-e0fb-4fba-b4af-c502a9ce51fb.png)
 
  
  
