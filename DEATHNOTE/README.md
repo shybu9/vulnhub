@@ -107,5 +107,10 @@ http://< IP >/wordpress/wp-admin
  wget < copied link >
  ```
  ![deathnote notes](https://user-images.githubusercontent.com/112984045/202262450-5038af71-b0ca-412a-a255-f30b6de2871f.png)
+<br>
+
+```bash
+hydra -l user.txt -P note.txt ssh://< IP >
+```
 
  
