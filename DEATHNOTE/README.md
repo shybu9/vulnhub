@@ -7,6 +7,7 @@
 * #### Do follow this page through out the line to void confusion.
 
 ### `setup the machine to vmware or virtualbox and run the machine.`
+### `It is recommended to keep both attack and deathnote machines on either briged or NAT network`
 ### ` After a successful setup go for the commands :`
 
 ## ENUMERATION :
@@ -14,6 +15,7 @@
 ```bash
 netdiscover -i < interface >
 ```
+`Example command : netdiscover -i eth0`
 ![deathnote netdiscover](https://user-images.githubusercontent.com/112984045/201920948-904f4e4d-0ac8-42ac-bf79-49646b91c2f3.png)<br>
 
 * For ENUMERATION we use nmap tool which come by default in kali linux.
@@ -23,16 +25,16 @@ netdiscover -i < interface >
 nmap -sC -sV -T4 -v < IP >
 ```
 ![deathnote nmap](https://user-images.githubusercontent.com/112984045/201921950-90d2d0a7-9879-4919-b4eb-397ba12743df.png)<br>
- ~ we can add -v argument for more verbose output.
+ ~ we can add -v argument for more verbose output.<br>
  
   * I usually perform one more scan by using my personal tool : [port-scanner](https://github.com/shybu9/port-Scanner)
-![deathnote portscanner](https://user-images.githubusercontent.com/112984045/201923393-7c7f0019-07c4-40cb-8f00-3ad50954bacd.png)
- ~ I prefer this tool because of its speed as you can see it just took 40 seconds for scanning 65535 ports.Even still some improvements to be done
+![deathnote portscanner](https://user-images.githubusercontent.com/112984045/201923393-7c7f0019-07c4-40cb-8f00-3ad50954bacd.png)<br>
+ ~ I prefer this tool because of its speed as you can see it just took 40 seconds for scanning 65535 ports.<br>Even still some improvements are to be done
  
  ### ANALYSING BOTH SCANS :
  * number of OPEN PORTS : 2
  * PORT NUMBERS : 22,80
- * OPERATING SYSTEM : Uinux, Linux
+ * OPERATING SYSTEM : Linux
  * service running on PORT 22 : ssh
  * service running on PORT 80 : http
  
@@ -45,7 +47,7 @@ nmap -sC -sV -T4 -v < IP >
  
  <br>
  
- * As the web-request is redirection to deathnote.vuln.. go for changing the host
+ * As the web-request is redirecting to deathnote.vuln.. go for changing the host
  ```bash
  nano /etc/hosts
  ```
@@ -81,7 +83,7 @@ wget http://< IP >/important.jpg
 ```bash
 http://deathnote.vuln/wordpress/index.php/hint/
 ```
-![deathnote hint](https://user-images.githubusercontent.com/112984045/202249653-4f9c4014-c6f3-4337-b4e1-6c547044314f.png)
+![deathnote hint](https://user-images.githubusercontent.com/112984045/202249653-4f9c4014-c6f3-4337-b4e1-6c547044314f.png)<br>
 ![deathnote Lcomment](https://user-images.githubusercontent.com/112984045/202250763-74359e02-f4e5-482c-a7d3-f609176742d5.png)<br>
 
 ` I think i have found something else`
@@ -89,7 +91,7 @@ http://deathnote.vuln/wordpress/index.php/hint/
 ```bash
 http://< IP >/wordpress/wp-admin
 ```
-![deathnote adminpage](https://user-images.githubusercontent.com/112984045/202252487-37685b3e-fd85-4ef2-b1dd-e6df4387408e.png)
+![deathnote adminpage](https://user-images.githubusercontent.com/112984045/202252487-37685b3e-fd85-4ef2-b1dd-e6df4387408e.png)<br>
 
 
 `It was a simple guess...`<br>
@@ -110,7 +112,7 @@ http://< IP >/wordpress/wp-admin
 <br>
 
 ```bash
-hydra -l l -P note.txt ssh://< IP >
+hydra -l l -P notes.txt ssh://< IP >
 ```
 ![deathnote l](https://user-images.githubusercontent.com/112984045/202267251-08e7fc8a-d649-4b2e-bf4b-054135373a6e.png)
 
@@ -129,7 +131,7 @@ cat user.txt
 ![deathnote brainfuck](https://user-images.githubusercontent.com/112984045/202270063-23ed6650-9776-4fd7-985d-c946107280fe.png)
 
 ```bash
-cd /opt
+cd /opt/L/fake-notebook-rule
 ```
 ```bash
 cat case.wav
