@@ -1,1 +1,3 @@
-# vulnhub
+# VULN-HUB MACHINES
+
+## LENGTHY - EASY - DETAILED - DIRECT   ~writeups
