@@ -71,6 +71,37 @@ nmap -sC -sV -T4 < IP >
  ![rick 1 ftpflag](https://user-images.githubusercontent.com/112984045/202398637-5237a77d-5bf5-43e0-9071-b7ac2e1ed1b8.png)
 <br>
 
+## ` POINTS : 20`
+<br>
+
+* As the port 80 is open lets have a look on web pages using IP
+ ```bash
+ http://<IP>
+ ```
+ <br>
+ 
+ * Nothing to do with the home page<br>
+```bash
+gobuster dir -u 192.168.0.102/  --no-error -w /usr/share/wordlists/dirb/big.txt -t 50
+```
+![rick gobu big 80](https://user-images.githubusercontent.com/112984045/202400675-bfa7167f-cd24-4e3f-8208-80a296c1708d.png)
+```bash
+gobuster dir -u 192.168.0.102/  --no-error -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 50
+``` 
+![rick gobu med 80](https://user-images.githubusercontent.com/112984045/202400725-7a42cd58-9e28-4a25-8afa-d22b8798e880.png)<br>
+<br>
+
+```bash
+http://< IP >/passwords/FLAG.txt
+```
+![rick 2 80 flag](https://user-images.githubusercontent.com/112984045/202401188-cb95b535-2ddb-4556-8ef0-823dc447d592.png)<br>
+
+## `POINTS : 30`
+<br>
+
+
+
+
 
 
 
