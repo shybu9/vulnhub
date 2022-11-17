@@ -22,7 +22,7 @@ netdiscover -i < interface >
  <br>command :
  
 ```bash
-nmap -sC -sV -T4 -v < IP >
+nmap -sC -sV -T4 < IP >
 ```
 ![deathnote nmap](https://user-images.githubusercontent.com/112984045/201921950-90d2d0a7-9879-4919-b4eb-397ba12743df.png)<br>
  ~ we can add -v argument for more verbose output.<br>
