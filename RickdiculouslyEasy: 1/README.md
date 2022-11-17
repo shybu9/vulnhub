@@ -32,7 +32,7 @@ nmap -sC -sV -T4 < IP >
   ~ we can add -v argument for more verbose output.<br>
  
 * I usually perform one more scan by using my personal tool : [port-scanner](https://github.com/shybu9/port-Scanner)
-![rick netdiscover](https://user-images.githubusercontent.com/112984045/202394059-da3ca2e9-6765-48a2-b0c4-f593dd7055f0.png)<br>
+![rick portscanner](https://user-images.githubusercontent.com/112984045/202403637-cc4fc199-850f-4bd8-a790-80e305916fbc.png)<br>
 * Thanks to my tool, It had found a flag at scanning itself before the nmap scan was done<br>
 
 ~ I prefer this tool because of its speed as you can see it just took 37 seconds for scanning 65535 ports.<br>Even still some improvements are to be done
@@ -98,6 +98,19 @@ http://< IP >/passwords/FLAG.txt
 
 ## `POINTS : 30`
 <br>
+
+* As the port 9090 is also open http, lets have a look at that to
+```bash
+https://< IP >:9090/
+```
+![rick 3 9090 flag](https://user-images.githubusercontent.com/112984045/202404793-8bc9c025-88b7-4b12-bfb4-c89380517807.png)<br>
+
+## `POINTS : 40`
+<br>
+
+
+
+
 
 
 
