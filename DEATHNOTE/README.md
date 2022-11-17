@@ -93,7 +93,7 @@ http://< IP >/wordpress/wp-admin
 
 
 `It was a simple guess...`<br>
-* USERNAME : Kire<br>
+* USERNAME : Kira<br>
 * PASSWORD : iamjustic3
 <br>
 
@@ -139,5 +139,23 @@ cat case.wav
 
 <br>
 
+* Username : kira<br>
+* Password : kiraisevil<br>
 
+```bash
+su kira
+```
+![deathnote su-kira](https://user-images.githubusercontent.com/112984045/202356862-d507d37a-84b9-4633-b0e0-0c77cf983cc3.png)
+
+## PRIVILEGE ESCALATION
+
+```bash
+sudo -l
+```
+![deathnote root](https://user-images.githubusercontent.com/112984045/202358116-5a24d4f5-835b-4e78-ae90-dd0809dd1611.png)
+
+
+<br>
+
+### FOR ANY DOUBTS OR SUGGESTIONS DO WRITE TO shy.bu9@gmail.com
  
