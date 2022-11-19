@@ -163,6 +163,23 @@ tail FLAG.txt
 ## `POINTS : 50`
 <br>
 
+```bash
+cd /home/Morty
+```
+```bash
+head Safe_Password.jpg
+```
+![rick meeseek ssh 22222](https://user-images.githubusercontent.com/112984045/202863956-e0ec10e2-ce5b-4025-b1a1-9d41b34a8517.png)
+<br>
+* password : Meeseek
+```bash
+unzip -c journal.txt.zip
+```
+![rick 5 mortyssh 22222](https://user-images.githubusercontent.com/112984045/202864120-ccd0ab63-ae62-407b-a331-0579803a6965.png)
+
+<br>
+## `POINTS : 70`
+
 <br>
 
  * Lets go for port  60000<br>
@@ -174,7 +191,7 @@ tail FLAG.txt
 
 <br>
 
-## `POINTS : 60`
+## `POINTS : 80`
 
 
 
